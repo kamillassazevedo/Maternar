@@ -1,27 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head> 
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">    
-<title>Maternar</title>
-</head> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+CU:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Maternar</title>
+</head>
+
 <body>
     <header>
         <h1>Maternar</h1>
     </header>
-    <main> 
+    <main>
         <section>
-        <input type="text" placeholder="Aqui você encontra:">
-        <button> Pesquisar</button> 
+            <input type="text" placeholder="Aqui você encontra:">
+            <button> Pesquisar</button>
+        </section>
+
+        <section id="resultados-pesquisa" class="resultados-pesquisa">
+            <div class="item-resultado">
+                <h2>Educação Perinatal</h2>
+                <p class="descricao-meta"> A educação perinatal é um processo fundamental para preparar as futuras mães
+                    e seus parceiros para a chegada do bebê. Ela abrange um conjunto de conhecimentos e práticas que
+                    visam informar e capacitar as famílias sobre a gestação, o parto e o pós-parto. </p>
+                <a href="https://inepes.com.br/" target="_blank"> Clique aqui para mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>Atividade Física</h2>
+                <p class="descricao-meta"> A prática regular de exercícios físicos traz inúmeros benefícios para a
+                    saúde, como melhora da condição cardiovascular, fortalecimento muscular e bem-estar mental. </p>
+                <a href="https://www.minhavida.com.br/saude/temas/exercicio-fisico" target="_blank">Saiba mais</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>Alimentação Saudável</h2>
+                <p class="descricao-meta"> Uma alimentação equilibrada é fundamental para prevenir doenças e promover a
+                    saúde. Inclua frutas, legumes, cereais integrais e proteínas magras em sua dieta. </p>
+                <a href="https://www.saude.gov.br/saude-de-a-a-z/alimentacao-saudavel" target="_blank">Acesse o site do
+                    Ministério da Saúde</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>Espiritualidade</h2>
+                <p class="descricao-meta"> A espiritualidade pode trazer paz interior, propósito de vida e fortalecer os
+                    relacionamentos. Explore diferentes práticas como meditação, yoga e conexão com a natureza. </p>
+                <a href="https://www.portaldobem.com/" target="_blank">Explore o Portal do Bem</a>
+            </div>
+
         </section>
     </main>
-    <footer> 
+    <footer>
         <p>2024- Maternar. Todos os direitos reservados. </p>
         <p> Entre em contato pelo email: kamillas.enfufba@gmail.com</p>
     </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
