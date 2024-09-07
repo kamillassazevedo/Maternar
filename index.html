@@ -2,66 +2,82 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+CU:wght@100..400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Maternar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Maternar</title>
 </head>
 
 <body>
-    <header>
-        <h1>Maternar</h1>
-    </header>
-    <main>
-        <section>
-            <input type="text" placeholder="Aqui você encontra:">
-            <button> Pesquisar</button>
+  <header>
+    <section class="wrapper">
+      <img class="logo" loading="lazy" src="assets/images/logo.webp" alt="Maternar" aria-label="Logotipo com o texto Maternar">
+    </section>
+
+    <section class="hero">
+      <div class="wrapper">
+        <div class="info">
+          <h1>Caminhos do Maternar</h1>
+          <h4>Explore a importância da educação perinatal, atividades físicas, alimentação equilibrada e espiritualidade para o bem-estar.</h4>
+        </div>
+        <img src="assets/images/slider.png" alt="Illustração com mulher grávida sorridentee transmitindo calma" loading="lazy">
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="wrapper">
+      <section  id="cards-results" class="cards"></section>
+    </section>
+
+    <section class="when-to-start">
+      <section class="wrapper">
+        <section class="boxes" id="topics">
+          <section class="box">
+
+            <h2>User Experience</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint vero illo ea soluta laudantium ex maiores, culpa dolorem quam amet impedit aspernatur ratione necessitatibus ipsa expedita ad ducimus nesciunt excepturi.</p>
+          </section>
+
+          <section class="box">
+            <h2>User Experience</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint vero illo ea soluta laudantium ex maiores, culpa dolorem quam amet impedit aspernatur ratione necessitatibus ipsa expedita ad ducimus nesciunt excepturi.</p>
+          </section>
+
+          <section class="box">
+            <h2>User Experience</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint vero illo ea soluta laudantium ex maiores, culpa dolorem quam amet impedit aspernatur ratione necessitatibus ipsa expedita ad ducimus nesciunt excepturi.</p>
+          </section>
         </section>
+      </section>
+    </section>
+  
+  </main>
 
-        <section id="resultados-pesquisa" class="resultados-pesquisa">
-            <div class="item-resultado">
-                <h2>Educação Perinatal</h2>
-                <p class="descricao-meta"> A educação perinatal é um processo fundamental para preparar as futuras mães
-                    e seus parceiros para a chegada do bebê. Ela abrange um conjunto de conhecimentos e práticas que
-                    visam informar e capacitar as famílias sobre a gestação, o parto e o pós-parto. </p>
-                <a href="https://inepes.com.br/" target="_blank"> Clique aqui para mais informações</a>
-            </div>
+  <footer class="footer">
+    <section class="wrapper">
+      <section class="footer-content">
+        <p>&copy; 2024 - Maternar - Todos os direitos reservados</p>
+        <p><a href="mailto:kamillas.enfufba@gmail.com">Kamilla Azevedo</a></p>
+      </section>
+    </section>
+  </footer>
 
-            <div class="item-resultado">
-                <h2>Atividade Física</h2>
-                <p class="descricao-meta"> A prática regular de exercícios físicos traz inúmeros benefícios para a
-                    saúde, como melhora da condição cardiovascular, fortalecimento muscular e bem-estar mental. </p>
-                <a href="https://www.minhavida.com.br/saude/temas/exercicio-fisico" target="_blank">Saiba mais</a>
-            </div>
+  <section id="myModal" class="modal">
+    <section class="modal-content">
+        <span class="close">&times;</span>
+        <section id="modalText"></section>
+    </section>
+  </section>
 
-            <div class="item-resultado">
-                <h2>Alimentação Saudável</h2>
-                <p class="descricao-meta"> Uma alimentação equilibrada é fundamental para prevenir doenças e promover a
-                    saúde. Inclua frutas, legumes, cereais integrais e proteínas magras em sua dieta. </p>
-                <a href="https://www.saude.gov.br/saude-de-a-a-z/alimentacao-saudavel" target="_blank">Acesse o site do
-                    Ministério da Saúde</a>
-            </div>
-
-            <div class="item-resultado">
-                <h2>Espiritualidade</h2>
-                <p class="descricao-meta"> A espiritualidade pode trazer paz interior, propósito de vida e fortalecer os
-                    relacionamentos. Explore diferentes práticas como meditação, yoga e conexão com a natureza. </p>
-                <a href="https://www.portaldobem.com/" target="_blank">Explore o Portal do Bem</a>
-            </div>
-
-        </section>
-    </main>
-    <footer>
-        <p>2024- Maternar. Todos os direitos reservados. </p>
-        <p> Entre em contato pelo email: kamillas.enfufba@gmail.com</p>
-    </footer>
-    <script src="dados.js"></script>
-    <script src="app.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

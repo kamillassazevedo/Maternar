@@ -1,0 +1,79 @@
+/* 1. Definir todas as margens para 0 */
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 2. Uso de border-box para todos os elementos */
+  margin: 0; /* Remove margens */
+  padding: 0; /* Remove paddings */
+  border-width: 0; /* Remove bordas */
+  border-style: solid; /* Define um estilo padrão */
+  border-color: currentColor; /* Alinha a cor das bordas com o texto */
+}
+
+/* 3. Herança padrão do Tailwind */
+html {
+  line-height: 1.5; /* Define espaçamento de linha */
+  -webkit-text-size-adjust: 100%; /* Para iOS evitar ajuste de tamanho */
+  -moz-tab-size: 4; /* Define tamanho da tabulação */
+  tab-size: 4; /* Define tamanho da tabulação */
+}
+
+/* 4. Configuração de fontes */
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: inherit; /* Herda o espaçamento de linha */
+}
+
+/* 5. Formatação de listas */
+ol,
+ul {
+  list-style: none; /* Remove os marcadores de lista */
+}
+
+/* 6. Reset de cabeçalhos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit; /* Herda o tamanho da fonte */
+  font-weight: inherit; /* Herda o peso da fonte */
+}
+
+/* 7. Reset de botões */
+button {
+  background-color: transparent; /* Remove background */
+  background-image: none; /* Remove qualquer imagem de fundo */
+  font-family: inherit; /* Herda a fonte do body */
+  color: inherit; /* Herda a cor */
+  cursor: pointer; /* Usa o ponteiro padrão de botões */
+}
+
+/* 8. Estilização de tabelas */
+table {
+  border-collapse: collapse; /* Remove espaçamento entre células */
+}
+
+/* 9. Reset de imagens e vídeos */
+img,
+video {
+  max-width: 100%; /* Garante que não excedam o tamanho do container */
+  height: auto; /* Ajusta proporcionalmente */
+}
+
+/* 10. Outras correções de formulário */
+input,
+button,
+textarea,
+select {
+  font: inherit; /* Usa a fonte do body */
+  color: inherit; /* Herda a cor */
+}
+
+/* 11. Resolução de navegadores específicos */
+::-webkit-file-upload-button {
+  font: inherit; /* Corrige o botão de upload em WebKit */
+}
